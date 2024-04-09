@@ -1,12 +1,12 @@
 import React from 'react'
-import { Index } from './Index'
-
+import { Action, Anime, Drama, Index, Science } from './Index'
+import { Siemreap } from 'next/font/google'
 const StaticPage = () => {
   return (
 
     <>
-
-      <nav class="bg-white border-gray-">
+      <div class="relative">
+        <nav class="bg-white absolute top-0 left-0 right-0 z-10">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" class="flex items-center">
             <img src="images/legend.jpg" class="h-8 mr-3" alt="Flowbite Logo" />
@@ -66,14 +66,35 @@ const StaticPage = () => {
             </ul>
           </div>
         </div>
-      </nav>
-      {/* Background  */}
-      <img src="/images/koreanMovie.jpg" alt="" width={1500} className='sticky' />
-
+        </nav>
+        <img src="/images/Background.jpg" alt="" width="1500" class="relative z-0" />
+      </div>
 
       <div className='bg-red-950 m-2 '>
+        <div className="font-bold text-white m-2">
+          <h1 className="text-2xl flex">All Movies &gt;</h1>
+        </div>
         <Index />
+        <div className="font-bold text-white m-2">
+          <h1 className="text-2xl">Action Movie &gt;</h1>
+        </div>
+        <Action />
+        <div className="font-bold text-white m-2">
+          <h1 className="text-2xl">Drama Movie &gt;</h1>
+        </div>
+        <Drama />
+        <div className="font-bold text-white m-2">
+          <h1 className="text-2xl">Anime Movie &gt;</h1>
+        </div>
+        <Anime />
+        <div className="font-bold text-white m-2">
+          <h1 className="text-2xl">Science Fiction &gt;</h1>
+        </div>
+        <Science />
       </div>
+
+
+
     </>
   )
 }
