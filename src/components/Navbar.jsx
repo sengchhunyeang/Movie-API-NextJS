@@ -6,7 +6,7 @@ const Navbar = () => {
 
             <div>
                 <nav className="navbar fixed top-0 left-0 right-0">
-                    <div className="w-full flex flex-wrap items-center justify-around p-4  absolute ">
+                    <div className="w-full flex  p-4  absolute ">
                         <a
                             href=""
                             class=""
@@ -43,15 +43,7 @@ const Navbar = () => {
                                     />
                                 </svg>
                             </button>
-                            <div className="relative hidden md:block">
-                                <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"></div>
-                                <input
-                                    type="text"
-                                    id="search-navbar"
-                                    class="ms-12 float-end block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500   dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="Type to search..."
-                                />
-                            </div>
+                            {/*  */}
                             <button
                                 data-collapse-toggle="navbar-search"
                                 type="button"
@@ -102,29 +94,40 @@ const Navbar = () => {
 
                             </div>
                             <div className="">
-                                <ul className=" flex  md:space-x-8 rtl:space-x-reverse  dark:border-gray-700 left-[70%] relative text-xl gap-10">
+                                <ul className=" flex   rtl:space-x-reverse  dark:border-gray-700 left-[70%] relative text-xl gap-10">
                                     <li>
-                                        <a href="#" className="block py-2 px-3 md:p-0 text-white">
+                                        <a href="#" className="block py-2 px-3 md:p-0 text-white hover:bg-white hover:text-black  hover:rounded hover:p-1">
                                             Home
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block py-2 px-3 md:p-0 text-white">
+                                        <a href="#" className="block py-2 px-3 md:p-0 text-white  hover:bg-white hover:text-black  hover:rounded hover:p-1">
                                             popular
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block py-2 px-3 md:p-0 text-white">
+                                        <a href="#" className="block py-2 px-3 md:p-0 text-white  hover:bg-white hover:text-black  hover:rounded hover:p-1">
                                             Romance
                                         </a>
                                     </li>
                                     <li>
                                         <a
                                             href="#"
-                                            className="block py-2 px-3 md:p-0 text-white "
+                                            className="block py-2 px-3 md:p-0 text-white  hover:bg-white hover:text-black  hover:rounded hover:p-1"
                                         >
                                             Anime
                                         </a>
+                                    </li>
+                                    <li>
+                                        <div className="relative hidden md:block">
+                                            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"></div>
+                                            <input
+                                                type="text"
+                                                id="search-navbar"
+                                                class="ms-12 float-right block w-full p-2 ps-10 text-sm shadow rounded"
+                                                placeholder="Type to search..."
+                                            />
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
